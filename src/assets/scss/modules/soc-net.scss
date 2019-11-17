@@ -7,6 +7,10 @@
   &-item {
     margin: 0 21px 0 0;
 
+    @media (max-width: $smtableWidth) {
+      margin: 0 31px 0 0;
+    }
+
     &:last-child {
       margin: 0;
     }
@@ -19,5 +23,23 @@
     height: 32px;
     box-shadow: $shadow-border-sm;
     padding: 0;
+
+    @media (max-width: $smtableWidth) {
+      min-width: 45px;
+      width: 45px;
+      height: 45px;
+
+      &_tw svg {
+        width: 20px;
+      }
+
+      &_inst svg {
+        width: 20px;
+      }
+
+      &_f svg {
+        width: 11px;
+      }
+    }
   }
 }

@@ -27,6 +27,7 @@
 
     @media (max-width: $smtableWidth) {
       display: block;
+      padding: 33px 0 0;
     }
   }
 
@@ -39,6 +40,10 @@
 
     @media (max-width: $smtableWidth) {
       text-align: center;
+    }
+
+    @media (max-width: $phoneWidth) {
+      font-size: 12px;
     }
   }
 }
@@ -53,7 +58,7 @@
   @media (max-width: $smtableWidth) {
     width: 100%;
     justify-content: center;
-    margin: 0 0 31px;
+    margin: 0 0 26px;
   }
 
   &__link {
@@ -82,7 +87,7 @@
   @media (max-width: $smtableWidth) {
     display: block;
     width: 100%;
-    margin: 0 0 44px;
+    margin: 0 0 39px;
   }
 }
 

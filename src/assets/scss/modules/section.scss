@@ -54,20 +54,30 @@
 }
 
 .section-1 {
+  background: $c-default url(/assets/img/section-bg-1.jpg) no-repeat center right;
+  background-size: contain;
+
+  @media (max-width: $smtableWidth) {
+    //padding: 136px 0 72px;
+    background: none;
+  }
+
   & .section__inner {
-    background: $c-default url(/assets/img/section-bg-1.jpg) no-repeat center right;
-    background-size: contain;
     //padding: 220px 0 140px;
     padding: 160px 0 72px;
     min-height: 720px;
 
+    @media (max-width: $smDesktopWidth) {
+      min-height: 654px;
+    }
+
     @media (max-width: $tableWidth) {
-      padding: 200px 0 115px;
+      min-height: 580px;
     }
 
     @media (max-width: $smtableWidth) {
+      min-height: auto;
       padding: 136px 0 72px;
-      background: none;
     }
   }
 }
@@ -82,48 +92,72 @@
 
   & .section-box-title {
     margin: 0 0 26px;
+
+    @media (max-width: $tableWidth) {
+      margin: 0 0 15px;
+    }
   }
 }
 
 .section-3 {
+  background: $c-default url(/assets/img/section-bg-2.jpg) no-repeat center left;
+  background-size: contain;
+
+  @media (max-width: $smtableWidth) {
+    background-position: bottom center;
+    background-size: 540px auto;
+  }
+
+  @media (max-width: $phoneWidth) {
+    background-size: 100% auto;
+  }
+
   & .section__inner {
-    background: $c-default url(/assets/img/section-bg-2.jpg) no-repeat center left;
-    background-size: contain;
     min-height: 582px;
     //padding: 150px 0 135px;
     padding: 75px 0 55px;
 
     @media (max-width: $smDesktopWidth) {
-      padding: 90px 0;
+      min-height: 500px;
+      //padding: 90px 0;
+    }
+
+    @media (max-width: $tableWidth) {
+      min-height: 440px;
     }
 
     @media (max-width: $smtableWidth) {
-      background-position: bottom center;
-      background-size: 540px auto;
+      min-height: auto;
       padding: 90px 0 560px;
     }
 
     @media (max-width: $phoneWidth) {
-      background-size: 100% auto;
-      padding: 45px 0 100%;
+      padding: 50px 0 98%;
     }
   }
 }
 
 .section-4 {
+  background: $c-default url(/assets/img/section-bg-4.jpg) no-repeat center right;
+  background-size: contain;
+
+  @media (max-width: $smtableWidth) {
+    background-position: bottom center;
+    background-size: 540px auto;
+  }
+
+  @media (max-width: $phoneWidth) {
+    background-size: 100% auto;
+  }
+
   & .section__inner {
-    background: $c-default url(/assets/img/section-bg-4.jpg) no-repeat center right;
-    background-size: contain;
 
     @media (max-width: $smtableWidth) {
-      background-position: bottom center;
-      background-size: 540px auto;
       padding: 0 0 350px;
     }
 
     @media (max-width: $phoneWidth) {
-      background-size: 100% auto;
-      padding: 0 0 64%;
+      padding: 0 0 66%;
     }
   }
 }
@@ -146,7 +180,7 @@
       padding: 70px 0 0;
 
       @media (max-width: $phoneWidth) {
-        padding: 0;
+        padding: 5px 0 0;
       }
     }
   }
@@ -172,7 +206,7 @@
   padding: 113px 0 130px;
 
   @media (max-width: $phoneWidth) {
-    padding: 64px 15px 93px;
+    padding: 64px 0 102px;
   }
 
   & .section-box-descr {
@@ -251,11 +285,8 @@
   @media (max-width: $tableWidth) {
     font-size: 30px;
     line-height: 1.27;
-  }
-
-  @media (max-width: $smtableWidth) {
-    font-size: 26px;
-    line-height: 1.23;
+    letter-spacing: -0.4px;
+    margin: 0 0 18px;
   }
 
   &_sm {
@@ -291,6 +322,7 @@
   @media (max-width: $tableWidth) {
     font-size: 16px;
     line-height: 1.25;
+    margin: 0 0 44px;
   }
 
   &_big {
