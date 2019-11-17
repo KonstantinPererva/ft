@@ -1,0 +1,23 @@
+.soc-net {
+  &-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &-item {
+    margin: 0 21px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &-link {
+    margin: 0 3px 3px 0;
+    min-width: 32px;
+    width: 32px;
+    height: 32px;
+    box-shadow: $shadow-border-sm;
+    padding: 0;
+  }
+}

@@ -1,0 +1,51 @@
+.characteristics-goods {
+  &-list {
+    position: relative;
+    padding: 50px 10px 37px 0;
+    background: rgba(255, 255, 255, 1);
+
+    @media (max-width: $tableWidth) {
+      padding: 40px 10px 0 0;
+    }
+  }
+
+  &-item {
+    margin: 0 0 19px;
+
+    @media (max-width: $tableWidth) {
+      margin: 0 0 10px;
+    }
+  }
+
+  &-parent {
+    font-size: 36px;
+    line-height: 1.56;
+    font-family: $f-akzReg;
+
+    @media (max-width: $tableWidth) {
+      font-size: 26px;
+      line-height: 2.15;
+    }
+
+    &:after {
+      content: '';
+      position: relative;
+      top: -5px;
+      display: block;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(229, 246, 255, 1) 75%);
+    }
+  }
+
+  &-addition {
+    font-size: 18px;
+    line-height: 1.24;
+    font-family: $f-akzReg;
+
+    @media (max-width: $tableWidth) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}

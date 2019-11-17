@@ -1,0 +1,29 @@
+.review {
+  position: relative;
+  max-width: 991px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 85px 30px 79px;
+
+  @media (max-width: $phoneWidth) {
+    padding: 0;
+  }
+
+  &__ico {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 172px;
+    height: 71px;
+    transform: translateY(-50%);
+
+    @media (max-width: $phoneWidth) {
+      display: none;
+    }
+
+    & svg {
+      margin: 0 auto;
+    }
+  }
+}

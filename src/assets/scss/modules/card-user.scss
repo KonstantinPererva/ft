@@ -1,0 +1,96 @@
+.card-user {
+  display: flex;
+  align-items: flex-start;
+
+  @media (max-width: $phoneWidth) {
+    display: block;
+    background: #effaff;
+    padding: 0 15px 90px;
+  }
+
+  &__wrapper-img {
+    border-radius: 50%;
+    width: 172px;
+    height: 172px;
+    box-shadow: inset 0 0 6px rgba(255,255,255,1);
+    flex-shrink: 0;
+    margin: 0 30px 0 0;
+    overflow: hidden;
+    position: relative;
+
+    @media (max-width: $phoneWidth) {
+      position: relative;
+      top: -86px;
+      margin: 0 auto;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+
+  &-box {
+    @media (max-width: $phoneWidth) {
+      margin: -66px 0 0;
+    }
+  }
+
+  &-review {
+    font-size: 24px;
+    line-height: 1.25;
+    font-family: $f-optItalic;
+    color: $c-descr;
+    margin: 0 0 35px;
+
+    @media (max-width: $smtableWidth) {
+      font-size: 20px;
+      line-height: 1.4;
+      text-align: center;
+    }
+  }
+
+  &-data {
+    &__name {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 18px;
+      line-height: 1;
+      font-family: $f-optBold;
+      margin: 0 0 6px;
+
+      @media (max-width: $phoneWidth) {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      line-height: 1;
+      font-family: $f-akzReg;
+
+      @media (max-width: $phoneWidth) {
+        justify-content: center;
+      }
+    }
+
+    &__property {
+      flex-shrink: 0;
+    }
+
+    &__value {
+      flex-shrink: 0;
+      margin: 0 0 0 6px;
+    }
+  }
+}

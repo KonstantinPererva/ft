@@ -1,0 +1,24 @@
+.carousel-review {
+  position: relative;
+  z-index: 0;
+
+  &-item {
+    @media (max-width: $phoneWidth) {
+      padding: 86px 0 0;
+    }
+  }
+
+  &-navigation {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+
+    @media (max-width: $phoneWidth) {
+      width: 104px;
+      left: 0;
+      margin: auto;
+      bottom: 26px;
+    }
+  }
+}

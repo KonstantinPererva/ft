@@ -1,0 +1,31 @@
+.navigation {
+  &-wrapper-button {
+    display: flex;
+    align-items: center;
+  }
+
+  &-button-prev, &-button-next {
+    width: 40px;
+    height: 42px;
+    background: none;
+    padding: 0;
+
+    @media (hover: hover) {
+      cursor: pointer;
+
+      &:hover {
+        & svg path {
+          fill: #bcbcbc;
+        }
+      }
+
+      & svg path {
+        transition: .15s;
+      }
+    }
+  }
+
+  &-button-prev {
+    margin: 0 24px 0 0;
+  }
+}

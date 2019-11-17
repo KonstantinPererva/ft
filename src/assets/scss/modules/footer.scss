@@ -1,0 +1,137 @@
+.footer {
+  padding: 0 0 10px;
+
+  &__inner {
+    width: 100%;
+    max-width: $desktopWidth;
+    margin: 0 auto;
+    padding: 0 85px;
+
+    @media (max-width: $smDesktopWidth) {
+      padding: 0 30px;
+    }
+
+    @media (max-width: $phoneWidth) {
+      padding: 0 15px;
+    }
+  }
+
+  &__hold {
+    border-top: 2px solid $c-m;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 18px 0 10px;
+    margin: 0 0 8px;
+
+    @media (max-width: $smtableWidth) {
+      display: block;
+    }
+  }
+
+  &-copy {
+    font-size: 14px;
+    line-height: normal;
+    font-family: $f-akzReg;
+    color: $c-descr;
+    margin: 8px 0;
+
+    @media (max-width: $smtableWidth) {
+      text-align: center;
+    }
+  }
+}
+
+.footer-logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 25%;
+
+  @media (max-width: $smtableWidth) {
+    width: 100%;
+    justify-content: center;
+    margin: 0 0 31px;
+  }
+
+  &__link {
+    flex-shrink: 0;
+    display: block;
+    margin: -9px 0 0;
+    height: 70px;
+
+    @media (max-width: $smtableWidth) {
+      height: 49px;
+    }
+
+    & img {
+      height: 100%;
+    }
+  }
+}
+
+.footer-menu {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+
+  @media (max-width: $smtableWidth) {
+    display: block;
+    width: 100%;
+    margin: 0 0 44px;
+  }
+}
+
+.footer-menu-list {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $smtableWidth) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.footer-menu-item {
+  flex-shrink: 0;
+  margin: 0 8px;
+
+  @media (max-width: $smtableWidth) {
+    text-align: center;
+    margin: 0 0 17px;
+  }
+}
+
+.footer-menu-link {
+  display: block;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-family: $f-akzMd;
+  color: $c-m-font;
+
+  @media (max-width: $smtableWidth) {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.footer-soc-net {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 25%;
+
+  @media (max-width: $smtableWidth) {
+    width: 100%;
+    justify-content: center;
+    margin: 0 0 40px;
+  }
+}

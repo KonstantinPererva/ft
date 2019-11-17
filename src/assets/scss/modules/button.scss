@@ -1,0 +1,42 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 255px;
+  height: 56px;
+  background: transparent;
+  box-shadow: $shadow-border;
+  border: 2px solid #222222;
+  text-transform: uppercase;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: $f-akzMd;
+  color: $c-m-font;
+  margin: 0 8px 8px 0;
+  transition: .15s;
+
+  &__text {
+    &_desktop {
+      @media (max-width: $phoneWidth) {
+        display: none;
+      }
+    }
+
+    &_mob {
+      display: none;
+
+      @media (max-width: $phoneWidth) {
+        display: block;
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      cursor: pointer;
+      background: $c-border-button;
+    }
+  }
+}

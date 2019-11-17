@@ -1,0 +1,26 @@
+.more-goods {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+
+  @media (max-width: $smtableWidth) {
+    max-width: 730px;
+  }
+
+  @media (max-width: $phoneWidth) {
+    max-width: 380px;
+  }
+
+  &-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 42px;
+    margin: 0 0 18px;
+
+    & .section-box-title_sm {
+      line-height: 1;
+      margin: 0;
+    }
+  }
+}

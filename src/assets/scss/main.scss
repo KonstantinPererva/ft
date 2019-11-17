@@ -1,0 +1,28 @@
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/normalize";
+@import "utils/reset";
+@import "utils/base";
+@import "utils/fonts";
+
+//@import "../css/swiper";
+
+//@import "./modules/collections";
+@import "./modules/header";
+@import "./modules/button";
+@import "./modules/section";
+@import "./modules/characteristics-goods";
+@import "./modules/benefits";
+@import "./modules/box-pulse";
+@import "./modules/more-goods";
+@import "./modules/carousel-goods";
+@import "./modules/card-goods";
+@import "./modules/review";
+@import "./modules/card-user";
+@import "./modules/navigation";
+@import "./modules/carousel-review";
+@import "./modules/form-subscribe";
+@import "./modules/footer";
+@import "./modules/soc-net";
+@import "./modules/substrate-page";
+
