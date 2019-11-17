@@ -7,13 +7,21 @@
     @media (max-width: $tableWidth) {
       padding: 40px 10px 0 0;
     }
+
+    @media (max-width: $phoneWidth) {
+      padding: 12px 0 0;
+    }
   }
 
   &-item {
     margin: 0 0 19px;
 
     @media (max-width: $tableWidth) {
-      margin: 0 0 10px;
+      margin: 0 0 8px;
+    }
+
+    @media (max-width: $phoneWidth) {
+      margin: 0 0 6px;
     }
   }
 
@@ -45,7 +53,7 @@
 
     @media (max-width: $tableWidth) {
       font-size: 16px;
-      line-height: 1.5;
+      line-height: 1.3;
     }
   }
 }

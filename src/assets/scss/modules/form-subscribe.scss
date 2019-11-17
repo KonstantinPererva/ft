@@ -22,6 +22,10 @@
     &:-moz-placeholder           {color: $c-placeholder;}
     &::-moz-placeholder          {color: $c-placeholder;}
     &:-ms-input-placeholder      {color: $c-placeholder;}
+
+    @media (max-width: $phoneWidth) {
+      font-size: 14px;
+    }
   }
 
   &__submit {
