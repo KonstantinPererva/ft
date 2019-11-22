@@ -1,0 +1,47 @@
+.product-box {
+
+  &_bg {
+    position: relative;
+    min-height: 380px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      padding: 62px 15px;
+      min-height: 56vw;
+    }
+
+    &:after {
+      content: "";
+      background: rgba(0,0,0,.5);
+      position: absolute;
+      z-index: 0;
+      @include fullBock;
+    }
+
+    & .product-box-descr {
+      position: relative;
+      z-index: 1;
+      font-size: 24px;
+      line-height: 1.42;
+      color: $c-default;
+
+      @media (max-width: 767px) {
+        font-size: 20px;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  &_about {
+    background: url(/assets/img/bg-product-about.jpg) no-repeat right center;
+    background-size: cover;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

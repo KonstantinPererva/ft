@@ -1,0 +1,23 @@
+.product-box-descr {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #545454;
+  font-family: $f-akzReg;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  &_center {
+    text-align: center;
+  }
+
+  &_strong {
+    font-family: $f-optBold;
+
+    @media (max-width: 767px) {
+      line-height: 1.38;
+    }
+  }
+}

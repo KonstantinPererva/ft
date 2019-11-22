@@ -6,6 +6,8 @@ $f-optItalic: 'Optima-Italic', sans-serif;
 $f-akzReg: 'AkzidenzGroteskPro-Regular', sans-serif;
 $f-akzMd: 'AkzidenzGroteskPro-Md', sans-serif;
 
+$f-usb: 'Uni Sans Bold', sans-serif;
+
 // Size
 $desktopWidth            : 1280px;
 $smDesktopWidth          : 1260px;
@@ -23,9 +25,11 @@ $c-default : #fff;
 $c-m: #222;
 $c-descr: #646464;
 $c-placeholder: #a7a7a7;
+$c-gray: #bebebe;
 
 // Border
 $c-border-button: rgb(229,246,255);
+$c-m-bg: rgb(229,246,255);
 
 $shadow-border:
         1px 1px 0 1px $c-border-button,
@@ -79,3 +83,8 @@ $shadow-border-sm:
         inset 3px 3px 0 1px $c-border-button
 ;
 
+
+$t-blink: 1000ms;
+$t-blink-25: $t-blink * .25;
+$t-blink-50: $t-blink * .5;
+$t-blink-75: $t-blink * .75;

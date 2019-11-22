@@ -1,0 +1,12 @@
+.product-box-sup {
+  font-family: $f-akzReg;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    font-size: 10px;
+    letter-spacing: .83px;
+  }
+}

@@ -37,3 +37,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Uni Sans Bold';
+  src: url('/assets/fonts/Uni-Sans-SemiBold.woff2') format('woff2'),
+  url('/assets/fonts/Uni-Sans-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

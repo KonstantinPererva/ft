@@ -1,0 +1,7 @@
+.product-characteristics {
+  display: flex;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

@@ -1,0 +1,12 @@
+.product-card-button {
+  text-align: center;
+
+  @media (max-width: 767px) {
+    padding: 0 15px;
+
+    & .button {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+}

@@ -26,3 +26,39 @@
 @import "./modules/soc-net";
 @import "./modules/substrate-page";
 
+
+
+
+//page product left
+@import "./modules/product/product";
+@import "./modules/product/product-dual";
+@import "./modules/product/product-detail";
+@import "./modules/product/product-card";
+@import "./modules/product/product-card-quantity";
+@import "./modules/product/quantity";
+@import "./modules/product/product-card-price";
+@import "./modules/product/product-card-button";
+@import "./modules/product/product-menu";
+@import "./modules/product/product-menu-list";
+@import "./modules/product/product-menu-item";
+@import "./modules/product/product-menu-link";
+@import "./modules/product/indicator-active-link";
+
+
+//page product right
+@import "./modules/product-right/product-box";
+@import "./modules/product-right/product-box-title";
+@import "./modules/product-right/product-box-descr";
+@import "./modules/product-right/product-box-sub";
+@import "./modules/product-right/product-section";
+@import "./modules/product-right/product-box-list";
+@import "./modules/product-right/product-box-sup";
+@import "./modules/product-right/product-characteristics";
+@import "./modules/product-right/product-characteristics-column";
+@import "./modules/product-right/product-characteristics-title";
+@import "./modules/product-right/product-characteristics-dropdown";
+@import "./modules/product-right/product-characteristics-list";
+@import "./modules/product-right/product-characteristics-item";
+@import "./modules/product-right/product-characteristics-value";
+@import "./modules/product-right/process-step-list";
+@import "./modules/product-right/process-step-item";

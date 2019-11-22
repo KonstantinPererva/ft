@@ -1,0 +1,11 @@
+.product-box-sub {
+  font-size: 18px;
+  font-family: $f-optBold;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #545454;
+
+  &_center {
+    text-align: center;
+  }
+}

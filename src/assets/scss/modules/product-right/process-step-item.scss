@@ -1,0 +1,72 @@
+.process-step-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 56px;
+  background: #e5f6ff;
+  margin: 0 0 32px;
+  font-size: 16px;
+  line-height: 1;
+  font-family: $f-akzMd;
+  box-shadow:
+          1px 1px 0 1px #67c8df,
+          2px 2px 0 1px #67c8df,
+          3px 3px 0 1px #67c8df,
+          4px 4px 0 1px #67c8df
+  ;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 17px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -28px;
+    background: url(/assets/img/svg/arrow-process.svg) no-repeat center;
+    margin: auto;
+    opacity: 1;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+
+  &:nth-child(1):after {
+    animation: blink $t-blink linear infinite;
+  }
+
+  &:nth-child(2):after {
+    animation: blink $t-blink $t-blink-25 linear infinite;
+  }
+
+  &:nth-child(3):after {
+    animation: blink $t-blink $t-blink-50 linear infinite;
+  }
+
+  &:nth-child(4):after {
+    animation: blink $t-blink $t-blink-75 linear infinite;
+  }
+
+  &__text {
+    display: block;
+    margin: 4px 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

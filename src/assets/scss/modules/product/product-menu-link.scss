@@ -1,0 +1,24 @@
+.product-menu-link {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $f-akzMd;
+  color: $c-gray;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 6px 10px;
+  transition: .15s;
+  white-space: nowrap;
+
+  @media (hover: hover) {
+    &:hover {
+      color: #848484;
+      background: $c-m-bg;
+      text-decoration: none;
+    }
+  }
+
+  &.active {
+    color: #222;
+  }
+}

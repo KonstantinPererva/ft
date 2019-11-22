@@ -1,0 +1,33 @@
+.product-characteristics-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 48px;
+  background: #fcf6f7;
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-family: $f-akzMd;
+  line-height: 1;
+  padding: 0 5px;
+
+  @media (min-width: 768px) {
+    pointer-events: none;
+  }
+
+  &__arrow {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 11px;
+    margin: auto;
+    width: 16px;
+    height: 10px;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+}

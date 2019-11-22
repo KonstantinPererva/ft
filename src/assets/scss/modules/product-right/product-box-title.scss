@@ -1,0 +1,26 @@
+.product-box-title {
+  font-family: $f-opt;
+  font-size: 36px;
+  line-height: 1.22;
+  color: #111;
+  margin: 0 0 26px;
+
+  @media (max-width: 767px) {
+    font-size: 26px;
+    line-height: 1.23;
+  }
+
+  &_big {
+    font-size: 48px;
+    line-height: 1.17;
+
+    @media (max-width: 767px) {
+      font-size: 30px;
+      line-height: 1.27;
+    }
+  }
+
+  &_center {
+    text-align: center;
+  }
+}

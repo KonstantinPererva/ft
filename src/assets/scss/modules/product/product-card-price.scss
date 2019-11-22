@@ -1,0 +1,11 @@
+.product-card-price {
+  font-size: 32px;
+  font-family: $f-opt;
+  color: #111;
+  text-align: center;
+  margin: 0 0 27px;
+
+  @media (max-width: 767px) {
+    margin: 0 0 39px;
+  }
+}

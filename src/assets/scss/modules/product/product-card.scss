@@ -1,0 +1,16 @@
+.product-card {
+
+  &__wrapper-img {
+    position: relative;
+    padding: 77.335% 0 0;
+    margin: 0 0 8px;
+
+    @media (max-width: 767px) {
+      margin: 0 0 25px;
+    }
+  }
+
+  &__img {
+    @include posImg;
+  }
+}

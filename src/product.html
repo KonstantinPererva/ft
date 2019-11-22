@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Product</title>
+  <link href="assets/libs/swiper/swiper.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- main wrapper -->
+<div class="wrapper">
+
+<!--  header  -->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header-button-mob-menu">
+        <svg class="menu-line" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line class="menu-line__first" x1="1" y1="1" x2="20" y2="1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line class="menu-line__center" x1="1" y1="10" x2="14" y2="10" stroke="black" stroke-width="2" stroke-linecap="round"/>
+          <line class="menu-line__last" x1="1" y1="19" x2="20" y2="19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="header-logo">
+        <a href="#" class="header-logo__link">
+          <img src="assets/img/logo.png" alt="logo" class="header-logo__img" />
+        </a>
+      </div>
+
+      <nav class="header-menu">
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a href="#" class="header-menu-link">Home</a>
+          </li>
+
+          <li class="header-menu-item">
+            <a href="#" class="header-menu-link">Product</a>
+          </li>
+
+          <li class="header-menu-item">
+            <a href="#" class="header-menu-link">Dealers</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-basket">
+        <a href="#" class="header-basket__link">
+          <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.364 20.196L17.329 6.57C17.3172 6.41287 17.2464 6.266 17.1309 6.15882C17.0153 6.05165 16.8636 5.99206 16.706 5.992H2.695C2.53726 5.99208 2.38538 6.0518 2.26983 6.15919C2.15428 6.26658 2.08361 6.41369 2.072 6.571L1.029 20.32C1.02283 20.4057 1.03435 20.4917 1.06284 20.5727C1.09133 20.6537 1.13619 20.728 1.19463 20.7909C1.25306 20.8539 1.32383 20.9041 1.40251 20.9385C1.48119 20.973 1.56612 20.9908 1.652 20.991H17.762C17.8587 20.9911 17.9542 20.9688 18.0409 20.9258C18.1275 20.8827 18.203 20.8202 18.2613 20.743C18.3197 20.6658 18.3593 20.5762 18.3772 20.4811C18.395 20.386 18.3905 20.2881 18.364 20.195V20.196ZM2.326 19.742L3.274 7.242H16.127L17.076 19.742H2.326V19.742Z" fill="black" stroke="#222222" stroke-width="0.5"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.7 1C6.944 1 4.7 3.244 4.7 6.001V8.492C4.7 8.65776 4.76585 8.81673 4.88306 8.93394C5.00027 9.05115 5.15924 9.117 5.325 9.117C5.49076 9.117 5.64973 9.05115 5.76694 8.93394C5.88415 8.81673 5.95 8.65776 5.95 8.492V6.002C5.95053 5.00742 6.34572 4.05369 7.04881 3.35023C7.7519 2.64676 8.70542 2.25106 9.7 2.25C10.6944 2.25106 11.6478 2.64662 12.3508 3.34987C13.0539 4.05312 13.4492 5.00659 13.45 6.001V8.492C13.45 8.65776 13.5158 8.81673 13.6331 8.93394C13.7503 9.05115 13.9092 9.117 14.075 9.117C14.2408 9.117 14.3997 9.05115 14.5169 8.93394C14.6342 8.81673 14.7 8.65776 14.7 8.492V6.002C14.6987 4.67614 14.1715 3.40493 13.2342 2.46722C12.2969 1.52951 11.0259 1.00185 9.7 1V1Z" fill="black" stroke="#222222" stroke-width="0.5"/>
+          </svg>
+
+           <span class="header-basket__amount">1</span>
+        </a>
+      </div>
+    </div>
+  </header>
+<!-- end header -->
+
+<!--  main  -->
+  <main class="main">
+    <div class="section product">
+      <div class="product-dual">
+        <div class="product-dual__item product-dual__item_left">
+          <nav class="product-menu">
+            <ul class="product-menu-list">
+              <li class="product-menu-item">
+                <a href="#intro" class="product-menu-link active">Intro</a>
+              </li>
+
+              <li class="product-menu-item">
+                <a href="#about" class="product-menu-link">About</a>
+              </li>
+
+              <li class="product-menu-item">
+                <a href="#how-to-use" class="product-menu-link">How to use</a>
+              </li>
+
+              <li class="product-menu-item">
+                <a href="#benefits" class="product-menu-link">Benefits</a>
+              </li>
+
+              <li class="product-menu-item">
+                <a href="#process" class="product-menu-link">Process</a>
+              </li>
+            </ul>
+
+            <span class="indicator-active-link"></span>
+          </nav>
+
+          <div class="product-detail">
+            <div class="product-card">
+              <div class="product-card__wrapper-img">
+                <img src="assets/img/product.jpg" alt="product" class="product-card__img" />
+              </div>
+
+              <div class="product-card-quantity">
+                <span class="product-card-quantity__title">Quantity:</span>
+
+                <div class="quantity">
+                  <button type="button" class="quantity__button quantity-minus">
+                    <svg width="8" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="0.996826" width="10" height="1.42857" rx="0.714286" fill="#222222"/>
+                    </svg>
+                  </button>
+
+                  <input type="text" class="quantity__input quantity-input" value="1" />
+
+                  <button type="button" class="quantity__button quantity-plus">
+                    <svg width="8" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M-0.00012207 5.99683C-0.00012207 5.60234 0.319675 5.28254 0.714164 5.28254H9.28559C9.68008 5.28254 9.99988 5.60234 9.99988 5.99683C9.99988 6.39132 9.68008 6.71111 9.28559 6.71111H0.714164C0.319675 6.71111 -0.00012207 6.39132 -0.00012207 5.99683Z" fill="#222222"/>
+                      <path d="M4.99988 10.9968C4.60539 10.9968 4.28559 10.677 4.28559 10.2825V1.71111C4.28559 1.31662 4.60539 0.996826 4.99988 0.996826C5.39437 0.996826 5.71416 1.31662 5.71416 1.71111V10.2825C5.71416 10.677 5.39437 10.9968 4.99988 10.9968Z" fill="#222222"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-card-price">
+                <span class="product-card-price__num">129$</span>
+              </div>
+
+              <div class="product-card-button">
+                <button class="button">Buy now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-dual__item product-dual__item_right">
+<!--  section-1   -->
+          <div id="intro" class="product-section product-section_intro">
+            <div class="product-box">
+              <div class="product-box-title product-box-title_big product-box-title_center">
+                <span class="product-box-title__text">Aesthetics Medicine & Beauty</span>
+              </div>
+
+              <div class="product-box-descr product-box-descr_center">
+                <span class="product-box-descr__text">First started in 2014, Europe. Most advanced practice. To repair skin self-heal abilities. From Europe, USA, to Taiwan, Hong Kong now.</span>
+              </div>
+
+              <div class="product-box-sub product-box-sub_center">
+                <div class="product-box-sub__text">Say hi to the new world!</div>
+              </div>
+            </div>
+
+            <div class="product-box">
+              <div class="product-box__wrapper-img">
+                <img src="assets/img/bg-product-intro.jpg" alt="info" class="product-box__img" />
+              </div>
+            </div>
+          </div>
+<!--  end section-1   -->
+
+<!--  section-2  -->
+          <div id="about" class="product-section product-section_about">
+            <div class="product-box">
+              <div class="product-box-title">
+                <span class="product-box-title__text">Corneum Also Blocked Away Nutrients!</span>
+              </div>
+
+              <div class="product-box-descr">
+                <span class="product-box-descr__text">Greoskin nanochip beauty instrument opens up channels for active ingredients penetrate. Takes only 20 min for the channel to close. Granular layer recovers skin repair function, locking hydration and hyaluronic acid inside dermis.</span>
+              </div>
+            </div>
+          </div>
+<!--  end section-2 -->
+
+<!--  section-3  -->
+          <div class="product-section">
+            <div class="product-box product-box_bg product-box_about">
+              <div class="product-box-descr product-box-descr_center">
+                <span class="product-box-descr__text">Nanochip beauty instrument helps with aging skin problems with delivering serum to deeper layer of skin!</span>
+              </div>
+            </div>
+          </div>
+<!--  end section-3  -->
+
+<!--  section-4  -->
+          <div id="how-to-use" class="product-section product-section_how-to-use">
+            <div class="product-box">
+              <div class="product-box-title">
+                <span class="product-box-title__text">How to Use</span>
+              </div>
+
+              <div class="product-box-descr product-box-descr_strong">
+                <span class="product-box-descr__text">Easy to disassemble and use without disenfection; safe and convenient. To avoid infection, the nanoneedling is recommended to be used once.</span>
+              </div>
+
+              <ol class="product-box-list">
+                <li class="product-box-list__item">
+                  <span class="product-box-list__text">The skin test of the product should be carried out on the inside of the wrist or behind the ear before use. It can be used on the face until there is no reaction after about 20 minutes.</span>
+                </li>
+
+                <li class="product-box-list__item">
+                  <span class="product-box-list__text">Follow the principle of three and three6 do not operate more than three times in the same part, stay time is no more than three seconds, the whole face is carried out in a point-lifting way, do not ring, do not press the skin hard6 lightly stick the skin and the skin has no pressure.</span>
+                </li>
+
+                <li class="product-box-list__item">
+                  <span class="product-box-list__text">After using the instrument6 message the serum until it is fully absorbed. Cleansing after 15 minutes, and apply the thermal spring SOS essence.</span>
+                </li>
+              </ol>
+            </div>
+          </div>
+<!--  end section-4  -->
+
+<!--  section-5  -->
+          <div id="benefits" class="product-section product-section_benefits">
+            <div class="product-box">
+              <div class="product-box-sup">
+                <span class="product-box-sup__text">Save time and efforts and save money</span>
+              </div>
+
+              <div class="product-box-title">
+                <span class="product-box-title__text">You Only Need a Wafer to Do Beauty Treatments at Home</span>
+              </div>
+
+              <div class="product-box-descr product-box-descr_big">
+                <span class="product-box-descr__text">Spend more when making a treatment in a beauty salon</span>
+              </div>
+            </div>
+          </div>
+<!--  end section-5  -->
+
+<!--  section-6  -->
+          <div class="product-section">
+            <div class="product-box">
+              <div class="product-box__wrapper-img">
+                <img src="assets/img/bg-product-benefits.jpg" alt="info" class="product-box__img" />
+              </div>
+            </div>
+          </div>
+<!--  end section-6  -->
+
+<!--  section-7  -->
+          <div class="product-section product-section_characteristics">
+            <div class="product-box">
+              <div class="product-characteristics">
+                <div class="product-characteristics-column">
+                  <div class="product-characteristics-title">
+                    <span class="product-characteristics-title__text">Sincare Method</span>
+
+                    <span class="product-characteristics-title__arrow">
+                      <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.121 0.941058L15.059 1.85306L8.05902 9.06006L1.05902 1.85306L1.99702 0.942059L8.05902 7.18206L14.121 0.941058Z" fill="#222222" stroke="#222222" stroke-width="0.5"/>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <div class="product-characteristics-dropdown">
+                    <ul class="product-characteristics-list">
+                      <li class="product-characteristics-item">
+                        <span class="product-characteristics-value">daily application</span>
+                      </li>
+
+                      <li class="product-characteristics-item">
+                        <span class="product-characteristics-value">light medical beauty</span>
+                      </li>
+
+                      <li class="product-characteristics-item">
+                        <span class="product-characteristics-value">medical beauty</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="product-characteristics-column">
+                  <div class="product-characteristics-title">
+                    <span class="product-characteristics-title__text">Mechanism Of Action</span>
+
+                    <span class="product-characteristics-title__arrow">
+                      <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.121 0.941058L15.059 1.85306L8.05902 9.06006L1.05902 1.85306L1.99702 0.942059L8.05902 7.18206L14.121 0.941058Z" fill="#222222" stroke="#222222" stroke-width="0.5"/>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <div class="product-characteristics-dropdown">
+                    <ul class="product-characteristics-list">
+                      <li class="product-characteristics-item">
+                        <span class="product-characteristics-value">nourish the skin surface</span>
+                      </li>
+
+                      <li class="product-characteristics-item">
+                        <span class="product-characteristics-value">G.E.O nanoneedling nourish the epidermis of skin</span>
+                      </li>
+
+                      <li class="product-characteristics-item">
+                        <span class="product-characteristics-value">injecting hyaluronic acid and other nutrients to fill the dermis</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="product-characteristics-column">
+                  <div class="product-characteristics-title">
+                    <span class="product-characteristics-title__text">Action Part</span>
+
+                    <span class="product-characteristics-title__arrow">
+                      <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.121 0.941058L15.059 1.85306L8.05902 9.06006L1.05902 1.85306L1.99702 0.942059L8.05902 7.18206L14.121 0.941058Z" fill="#222222" stroke="#222222" stroke-width="0.5"/>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <div class="product-characteristics-dropdown">
+                    <ul class="product-characteristics-list">
+                      <li class="product-characteristics-item">
+                        <span class="product-characteristics-value">skin surface</span>
+                      </li>
+
+                      <li class="product-characteristics-item">
+                        <span class="product-characteristics-value">surface</span>
+                      </li>
+
+                      <li class="product-characteristics-item">
+                        <span class="product-characteristics-value">dermal or muscle</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="product-characteristics-column">
+                  <div class="product-characteristics-title">
+                    <span class="product-characteristics-title__text">Usage Frequency</span>
+
+                    <span class="product-characteristics-title__arrow">
+                      <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.121 0.941058L15.059 1.85306L8.05902 9.06006L1.05902 1.85306L1.99702 0.942059L8.05902 7.18206L14.121 0.941058Z" fill="#222222" stroke="#222222" stroke-width="0.5"/>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <div class="product-characteristics-dropdown">
+                    <ul class="product-characteristics-list">
+                      <li class="product-characteristics-item">
+                        <span class="product-characteristics-value">everyday</span>
+                      </li>
+
+                      <li class="product-characteristics-item">
+                        <span class="product-characteristics-value">twice a week</span>
+                      </li>
+
+                      <li class="product-characteristics-item">
+                        <span class="product-characteristics-value">occasionally</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--  end section-7  -->
+
+<!--  section-8  -->
+          <div id="process" class="product-section product-section_process">
+            <div class="product-box">
+              <div class="product-box-title product-box-title_center">
+                <span class="product-box-title__text">Process</span>
+              </div>
+
+              <ul class="process-step-list">
+                <li class="process-step-item">
+                  <span class="process-step-item__text">Take Off Makeup</span>
+                </li>
+
+                <li class="process-step-item">
+                  <span class="process-step-item__text">Cleansing</span>
+                </li>
+
+                <li class="process-step-item">
+                  <span class="process-step-item__text">Nanochip Beauty Instrument</span>
+                </li>
+
+                <li class="process-step-item">
+                  <span class="process-step-item__text">Thermal Spring SOS Essence</span>
+                </li>
+
+                <li class="process-step-item">
+                  <div>
+                    <span class="process-step-item__text">Whitening, Peptide</span>
+                    <span class="process-step-item__text">Essence/Creame</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+<!--  end section-8  -->
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-form-subscribe">
+      <div class="section__hold section__hold_sm">
+        <div class="section-box-title section-box-title_sm">
+          <span class="section-box-title__text">We’d Like to Be Your Friend</span>
+        </div>
+
+        <div class="section-box-descr">
+          <span class="section-box-descr__text">Sign up now and be the first to know about exclusive offers, product updates, and exciting news and announcements.</span>
+        </div>
+
+        <form action="!" class="form-subscribe">
+          <div class="form-subscribe__row">
+            <input type="text" class="form-subscribe__input" placeholder="What's your email?" />
+
+            <button type="submit" class="button form-subscribe__submit">
+              <span class="button__text button__text_desktop">Subscribe</span>
+
+              <span class="button__text button__text_mob">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29197 14.677V18.542C7.2928 18.6732 7.33485 18.8009 7.41216 18.9069C7.48948 19.0129 7.59816 19.0919 7.72284 19.1328C7.84753 19.1737 7.98191 19.1744 8.107 19.1348C8.2321 19.0952 8.34157 19.0172 8.41996 18.912L10.68 15.835L7.29197 14.677V14.677ZM19.738 0.115996C19.644 0.0490593 19.5334 0.00942586 19.4183 0.00148354C19.3032 -0.00645879 19.1882 0.0175998 19.086 0.0709957L0.335965 9.863C0.228446 9.92016 0.139898 10.0074 0.0811354 10.114C0.0223724 10.2207 -0.00406298 10.3422 0.00505734 10.4636C0.0141777 10.585 0.058459 10.7012 0.132494 10.7978C0.206529 10.8945 0.307114 10.9675 0.421965 11.008L5.63497 12.79L16.735 3.298L8.14497 13.648L16.882 16.633C16.9687 16.662 17.0608 16.6718 17.1517 16.6615C17.2426 16.6513 17.3301 16.6213 17.4082 16.5736C17.4863 16.526 17.5531 16.4619 17.6038 16.3858C17.6546 16.3097 17.688 16.2234 17.702 16.133L19.993 0.717996C20.0099 0.604055 19.995 0.487659 19.95 0.381621C19.905 0.275583 19.8317 0.184015 19.738 0.116996V0.115996Z" fill="white"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+<!-- end main -->
+
+<!--  footer  -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__hold">
+        <div class="footer-logo">
+          <a href="#" class="footer-logo__link">
+            <img src="assets/img/logo.png" alt="logo" class="footer-logo__img" />
+          </a>
+        </div>
+
+        <nav class="footer-menu">
+          <ul class="footer-menu-list">
+            <li class="footer-menu-item">
+              <a href="#" class="footer-menu-link">Home</a>
+            </li>
+
+            <li class="footer-menu-item">
+              <a href="#" class="footer-menu-link">Product</a>
+            </li>
+
+            <li class="footer-menu-item">
+              <a href="#" class="footer-menu-link">Dealers</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer-soc-net">
+          <ul class="soc-net-list">
+            <li class="soc-net-item">
+              <a href="#" class="button soc-net-link soc-net-link_tw">
+                <svg width="16" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.362 4.23799C14.368 4.37899 14.372 4.52099 14.372 4.66299C14.372 9.00099 11.07 14.003 5.032 14.003C3.24783 14.0047 1.50089 13.4927 0 12.528C1.73593 12.7329 3.48258 12.2442 4.86 11.168C4.17488 11.1552 3.5109 10.9285 2.96097 10.5197C2.41103 10.1109 2.00267 9.54037 1.793 8.88799C2.28502 8.98352 2.79241 8.9647 3.276 8.83299C2.53314 8.68256 1.86515 8.27987 1.38527 7.69319C0.90539 7.10651 0.643149 6.37193 0.643 5.61399V5.57299C1.09888 5.82628 1.60873 5.96686 2.13 5.98299C1.43407 5.51965 0.941341 4.80805 0.752502 3.99359C0.563664 3.17913 0.692971 2.3233 1.114 1.60099C1.93827 2.61513 2.9666 3.44459 4.13225 4.0355C5.29789 4.62642 6.57477 4.96559 7.88 5.03099C7.71425 4.32668 7.78581 3.58734 8.08356 2.9279C8.38132 2.26845 8.88859 1.72585 9.52651 1.38442C10.1644 1.04299 10.8973 0.921865 11.6112 1.03988C12.325 1.15789 12.9799 1.50842 13.474 2.03699C14.209 1.89209 14.9139 1.62253 15.558 1.23999C15.3132 2.00034 14.8004 2.64577 14.115 3.05599C14.7656 2.97902 15.4009 2.80509 16 2.53999C15.5595 3.1996 15.0048 3.77529 14.362 4.23999V4.23799Z" fill="#222222"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="soc-net-item">
+              <a href="#" class="button soc-net-link soc-net-link_inst">
+                <svg width="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.964 0.00201416H4.037C1.81 0.00201416 0 1.80601 0 4.02201V11.917C0 14.134 1.81 15.937 4.036 15.937H11.963C14.188 15.937 15.998 14.134 15.998 11.917V4.02201C15.998 1.80601 14.188 0.00201416 11.963 0.00201416H11.964ZM14.258 11.917C14.258 13.177 13.228 14.203 11.964 14.203H4.037C3.42972 14.2035 2.84703 13.9632 2.41678 13.5346C1.98653 13.106 1.74385 12.5243 1.742 11.917V4.02201C1.742 2.76201 2.772 1.73701 4.037 1.73701H11.964C12.5709 1.73675 13.1532 1.97711 13.5832 2.40543C14.0132 2.83376 14.2559 3.41509 14.258 4.02201V11.917Z" fill="black"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.253 4.71401C11.9952 4.71428 11.7478 4.61233 11.565 4.4305C11.3823 4.24868 11.2791 4.00181 11.278 3.74401C11.278 3.48543 11.3807 3.23743 11.5636 3.05458C11.7464 2.87174 11.9944 2.76901 12.253 2.76901C12.5116 2.76901 12.7596 2.87174 12.9424 3.05458C13.1253 3.23743 13.228 3.48543 13.228 3.74401C13.2269 4.00181 13.1237 4.24868 12.941 4.4305C12.7582 4.61233 12.5108 4.71428 12.253 4.71401Z" fill="black"/>
+                  <path d="M8 3.86603C5.728 3.86603 3.88 5.70603 3.88 7.97003C3.88 10.232 5.728 12.074 8 12.074C10.272 12.074 12.12 10.232 12.12 7.97003C12.12 5.70703 10.272 3.86603 8 3.86603ZM8 10.34C7.37036 10.3406 6.7662 10.0914 6.32003 9.64707C5.87387 9.20278 5.62212 8.59967 5.62 7.97003C5.62186 7.3403 5.87352 6.73704 6.31974 6.2927C6.76597 5.84835 7.37028 5.59923 8 5.60003C8.62956 5.5995 9.23361 5.84873 9.67962 6.29305C10.1256 6.73737 10.3772 7.34048 10.379 7.97003C10.3769 8.59967 10.1251 9.20278 9.67898 9.64707C9.23281 10.0914 8.62865 10.3406 7.999 10.34H8Z" fill="black"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="soc-net-item">
+              <a href="#" class="button soc-net-link soc-net-link_f">
+                <svg width="7" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6.534 2.454H4.954C4.64 2.454 4.324 2.778 4.324 3.018V4.63H6.531C6.47112 5.4219 6.38038 6.21117 6.259 6.996H4.313V14H1.412V6.995H0V4.638H1.412V2.712C1.412 2.359 1.341 0 4.384 0H6.534V2.454Z" fill="black"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <span class="footer-copy__text">© 2019 Denka Corporation. All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+<!-- end footer -->
+
+</div>
+<!-- end main wrapper -->
+
+<span class="substrate-page"></span>
+
+<!--<script type="text/javascript" src="assets/libs/swiper/swiper.js"></script>-->
+<!--<script type="text/javascript" src="assets/js/common.js"></script>-->
+</body>
+</html>

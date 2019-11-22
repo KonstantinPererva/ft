@@ -1,0 +1,9 @@
+.product-characteristics-column {
+  flex-shrink: 0;
+  width: 25%;
+  padding: 0 2px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
