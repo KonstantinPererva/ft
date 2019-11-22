@@ -53,6 +53,27 @@
   }
 }
 
+.section_title {
+  margin: 161px 0 0;
+
+  & .section__hold {
+    padding: 0 30px;
+  }
+}
+
+.section_form-registration {
+  margin: 0 0 104px;
+}
+
+.section_soc-net {
+  margin: 0 0 70px;
+
+  & .soc-net {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .section-1 {
   background: $c-default url(/assets/img/section-bg-1.jpg) no-repeat center right;
   background-size: contain;

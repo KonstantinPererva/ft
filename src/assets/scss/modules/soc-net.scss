@@ -42,4 +42,32 @@
       }
     }
   }
+
+  &-list_big {
+    & .soc-net-link {
+      min-width: 49px;
+      width: 49px;
+      height: 49px;
+
+      &_tw svg {
+        width: 20px;
+      }
+
+      &_inst svg {
+        width: 20px;
+      }
+
+      &_f svg {
+        width: 11px;
+      }
+    }
+
+    & .soc-net-item {
+      margin: 0 34px 0 0;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
 }

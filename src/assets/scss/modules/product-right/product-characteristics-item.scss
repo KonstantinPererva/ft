@@ -8,6 +8,12 @@
   font-family: $f-akzReg;
   margin: 0 0 4px;
   padding: 5px;
+
+  @media (max-width: 767px) {
+    &:last-child {
+      margin: 0;
+    }
+  }
   
   &:nth-child(odd) {
     background: #e5f6ff;
