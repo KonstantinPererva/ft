@@ -56,6 +56,10 @@
 .section_title {
   margin: 161px 0 0;
 
+  @media (max-width: 767px) {
+    margin: 134px 0 0;
+  }
+
   & .section__hold {
     padding: 0 30px;
   }
@@ -63,6 +67,10 @@
 
 .section_form-registration {
   margin: 0 0 104px;
+
+  @media (max-width: 767px) {
+    margin: 0 0 80px;
+  }
 }
 
 .section_soc-net {
@@ -232,6 +240,13 @@
 
   & .section-box-descr {
     margin: 0 0 42px;
+  }
+}
+.section_address {
+  margin: 0 0 123px;
+
+  @media (max-width: 1023px) {
+    margin: 0 0 94px;
   }
 }
 

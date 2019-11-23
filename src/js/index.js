@@ -98,9 +98,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var Slide =
-    /*#__PURE__*/
-    function () {
+var Slide = function () {
         function Slide(node, opt) {
             _classCallCheck(this, Slide);
 
@@ -191,3 +189,76 @@ var slides = document.querySelectorAll('.product-characteristics-column');
 
     slide.btn.addEventListener('click', slide.toggle);
 });
+
+//animate scroll
+var AnimateScroll = function (node, opt) {
+    var self = this;
+
+    self.opt = opt || {};
+    self.option = Object.assign({
+        indicator: '[data-indicator]',
+        link: '[data-link="anchor"]',
+        stepIndicator: 42,
+        transition: 600
+    }, self.opt);
+
+    self.node = document.querySelector(node);
+    self.indicator = self.node.querySelector(self.option.indicator);
+    self.links = self.node.querySelectorAll(self.option.link);
+
+    self.initActiveLink = function () {
+        self.indicator.style.transition = 200 + 'ms';
+
+        [].forEach.call(self.links, function (link, ind) {
+            var idSection = link.getAttribute('href');
+            var nextLink = link[ind + 1];
+            var idNextSection, nextSectionPosition;
+
+            if (nextLink) {
+                idNextSection = nextLink.getAttribute('href');
+                nextSectionPosition = $(idNextSection).offset().top;
+            }
+
+            var sectionPositionTop = $(idSection).offset().top;
+            var scroll = $(document).scrollTop();
+
+            if (sectionPositionTop <= scroll + 30 || nextSectionPosition >= scroll) {
+                $(self.option.link).removeClass('active');
+                link.classList.add('active');
+                self.indicator.style.top = ind * self.option.stepIndicator + 'px';
+            }
+        });
+    };
+
+    [].forEach.call(self.links, function (link, ind) {
+        if (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                self.indicator.style.transition = self.option.transition + 'ms';
+
+                window.removeEventListener('scroll', self.initActiveLink);
+
+                var idSection = this.getAttribute('href');
+                $('html, body').animate( { scrollTop: $( idSection ).offset().top }, self.option.transition );
+                $(self.option.link).removeClass('active');
+                this.classList.add('active');
+                self.indicator.style.top = ind * self.option.stepIndicator + 'px';
+
+                setTimeout(function () {
+                    window.addEventListener('scroll', self.initActiveLink);
+                }, self.option.transition + 50);
+            })
+        }
+    });
+
+    self.initActiveLink();
+
+    window.addEventListener('scroll', self.initActiveLink);
+};
+
+if (document.querySelectorAll('.product-menu').length) {
+    var animateScroll = new AnimateScroll('.product-menu', {
+        transition: 800
+    });
+}

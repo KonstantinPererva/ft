@@ -1,0 +1,66 @@
+.address-box {
+  max-width: 400px;
+  width: 100%;
+  flex-shrink: 0;
+  font-style: normal;
+  padding: 0 85px;
+
+  @media (max-width: 1023px) {
+    margin: 0 auto 35px;
+    text-align: center;
+  }
+
+  &__row {
+    margin: 0 0 30px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.address-box-title {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: $f-opt;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+}
+
+.address-box-data {
+  font-size: 16px;
+  line-height: 1.25;
+  font-family: $f-akzReg;
+
+  &__link {
+    color: $c-m;
+    text-decoration: none;
+
+    &:active, &:focus {
+      text-decoration: none;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.address-wrap-img {
+  width: 100%;
+  padding: 0 85px;
+
+  @media (max-width: 1024px) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 0;
+  }
+
+  & img {
+    width: 100%;
+  }
+}

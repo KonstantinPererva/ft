@@ -1,8 +1,11 @@
 .product-characteristics-dropdown {
-  display: block;
+  display: none;
+  overflow: hidden;
 
-  @media (max-width: 767px) {
-    display: none;
-    overflow: hidden;
+  @media (min-width: 768px) {
+    display: block !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
   }
 }

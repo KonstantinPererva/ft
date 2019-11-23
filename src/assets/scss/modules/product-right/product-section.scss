@@ -1,5 +1,6 @@
 .product-section {
   &_intro {
+    padding: 1px 0 0;
     & .product-box-title {
       max-width: 410px;
       width: 100%;
@@ -155,10 +156,14 @@
 
   &_characteristics {
     padding: 0 13px;
-    margin: 73px 0 80px;
+    margin: 73px 0 50px;
 
     @media (max-width: 767px) {
-      margin: 29px 0 80px;
+      margin: 29px 0 50px;
     }
+  }
+
+  &_process {
+    padding: 30px 0 0;
   }
 }
